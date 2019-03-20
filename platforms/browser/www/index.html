@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html id = "plantHtml">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="plant" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<title>FLUIDLIFT ecoblue</title>
+	<link rel="stylesheet" href="stylesheet.css" />
+	<meta http-equiv="Cache-Control" content="private" />
+	<meta http-equiv="Expires" content="86400000" />
+	<meta http-equiv="Cache-Control" content="max-age=86400000" />
+	<link rel="icon" sizes="192x192" href="tex/icon_192.png">
+</head>
+
+<body id = "whyTheFuckCanIJustHaveOneBody">
+	<script type="text/javascript" src="cordova.js"></script>
+<div id = "plantBody">
+	
+	<!-- <img class = "preload" src = "tex/trigger.2_active.png">
+	<img class = "preload" src = "tex/vid/0a.gif">
+	<img class = "preload" src = "tex/vid/0b.gif"> -->
+	
+	<!-- <div id = "bg">
+		<video id = "blueVideoBg" loop = "loop">
+			<source src="tex/blue, just blue.mov" />
+		</video>
+	</bg> -->
+	
+	<!-- <video id = "plantVideo" loop = "loop">
+		<source src="tex/loop_3.mov" />
+	</video> -->
+	
+	<img id = "plantStill" src = "tex/loop_3_still_smaller.png">
+	<img id = "plantVideo" src = "tex/loop_3.gif">
+	
+	<img class = "logo" src = "tex/logo_white.png">
+	
+	<img class = "trigger" src = "tex/trigger.2.png">
+	<img class = "trigger" src = "tex/trigger.2.png">
+	<img class = "trigger" src = "tex/trigger.2.png">
+	<img class = "trigger" src = "tex/trigger.2.png">
+	<img class = "trigger" src = "tex/trigger.2.png">
+	<img class = "trigger" src = "tex/trigger.2.png">
+	
+	
+	<div id = "detailOverlay">
+		<div id = "bg"></div>
+		<img class = "bubble" src = "tex/detail/0.png">
+		<img class = "bubble" src = "tex/detail/1.png">
+		<img class = "bubble" src = "tex/detail/2.png">
+		<img class = "bubble" src = "tex/detail/3.png">
+		<img class = "bubble" src = "tex/detail/4.png">
+		<img class = "bubble" src = "tex/detail/5.png">
+		<ul>
+			<li> 1991: Achim Mentzel wird deutscher Bundeskanzler. </li>
+			<li> 1996: Achim Mentzel fliegt ohne Hilfsmittel auf den Mond. </li>
+			<li> 2018: Achim Mentzel unterjocht Südafrika und führt flächendeckend den Euro ein. </li>
+		</ul>
+		
+	<!-- 	<img src = "tex/vid/0a.gif" class = "detailVideo">
+		<img src = "tex/vid/0b.gif" class = "detailVideo"> -->
+		
+		<div class = "detailVideo a0"></div>
+		<div class = "detailVideo b0"></div>
+		
+		<!-- <video class = "detailVideo" loop = "loop">
+			<source src="tex/vid/1a.mov" />
+		</video>
+		<video class = "detailVideo" loop = "loop">
+			<source src="tex/vid/1b.mov" />
+		</video> -->
+		
+		<div id = "switch">
+			<div id = "option1">
+				<h1> conventional conveying </h1>
+			</div>
+			<div id = "option2">
+				<h1> fluidlift </h1>
+				<!-- <h2 class = "ecoblue-logo"> ecoblue </h2> -->
+				<h2> ecoblue </h2>
+			</div>
+		</div>
+	</div>
+	
+	<div id = "ecoblueBox">
+		<h2> ecoblue </h2>
+		<div id = "pipe">
+		</div>
+	</div>
+	
+	<!-- <div id = "darken"></div>
+	<div id = "menu">
+		<div id = "option1">
+			<h1>CALCULATOR</h1>
+		</div>
+		<div id = "option2">
+			<h1>EXIT</h1>
+		</div>
+		<div id = "dots">
+			<h1> ··· </h1>
+		</div>
+	</div> -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CALCULATOR -->
+
+
+<div id = "calcBody">
+	
+	<div id = "touchBg"></div>
+	
+	<img class = "logo" src = "tex/logo_white.png">
+	
+	<div id = "head1">
+		<div class = "wideSpan">
+			<div class = "span s30">
+				<h1 class = "superBig">CONVENTIONAL </br> CONVEYING</h1>
+			</div>
+			
+			<div class = "span s20">
+				<h3>Production</h3> </br>
+				<h1 id = "productionCover">  </h1>
+				<h1><input type = "number" id = "productionTotalInput"> t/y</h1>
+			</div>
+			<div class = "span s25">
+				<h3>Sales Price</h3> </br>
+				<h1 id = "salesPriceCover">  </h1>
+				<h1><input type = "number" id = "salesPriceTotalInput"> $/t</h1>
+			</div>
+			<div class = "span s25">
+				<div class = "seperatorLine"> </div>
+				<input type="range" class = "slider" min="5" max="20" value="10" id="profitPercentSliderA" step = "0.1"/><h3>Profit (</h3><h3 id = "profitPercentA">10</h3><h3>%)</h3> </br>
+				<h1 id = "profitTotalInput">0.0</h1><h1>&nbsp;$/y</h1>
+				<!-- <h1><input type = "number" id = "profitTotalInput" class = "wide"> $/y</h1> -->
+			</div>
+		</div>
+	</div>
+	
+	<div id = "head2">
+		<div class = "wideSpan">
+			<div class = "span s30">
+				<h1 class = "superBig">FLUIDLIFT</h1> </br>
+				<h2>ecoblue</h2>
+			</div>
+			
+			<div class = "span s20">
+				<h3>Production</h3> </br>
+				<h1 id = "productionTotal">0.0</h1><h1>&nbsp;t/y</h1>
+			</div>
+			<div class = "span s25">
+				<h3>Sales Price</h3>
+				<h3 id = "salesPriceTotalPlus" class = "plus grey"></h3> </br>
+				<h1 id = "salesPriceTotal">0.0</h1><h1>&nbsp;$/t</h1>
+			</div>
+			<div class = "span s25">
+				<div class = "seperatorLine"> </div>
+				<h3>Profit (</h3><h3 id = "profitPercentB">10</h3><h3>%)</h3>
+				<h3 id = "profitTotalPlus" class = "plus"></h3> </br>
+				<div class = "super">
+					<h1 id = "profitTotal">0.0</h1><h1>&nbsp;$/y</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<img src = "tex/shadow.png" id = "shadow1">
+	
+	<div id = "tabs">
+		<div class = "wideSpan">
+			<div class = "span">
+				<h1 id = "qualityHeadline"> Quality </h1>
+				<h3 class = "plus" id = "qualityPlus"></h3>
+			</div>
+			<div class = "span">
+				<h1 id = "productivityHeadline"> Productivity </h1>
+				<h3 class = "plus" id = "productivityPlus">  </h3>
+			</div>
+			<div class = "span">
+				<h1 id = "wasteHeadline"> Waste </h1>
+				<h3 class = "plus" id = "wastePlus">  </h3>
+			</div>
+			<div class = "span">
+				<h1 id = "energyHeadline"> Energy </h1>
+				<h3 class = "plus" id = "energyPlus">  </h3>
+			</div>
+			<div class = "span">
+				<h1 id = "operationHeadline"> Operation </h1>
+				<h3 class = "plus" id = "operationPlus">  </h3>
+			</div>
+			
+			<img src = "tex/shadow_b.png" id = "shadow2Left">
+			<img src = "tex/shadow_b.png" id = "shadow2Right">
+		</div>
+	</div>
+	
+	<div id = "qualityDiv" class = "detail">
+		<div class = "detail1 wideSpan oneLine">
+			<div class = "span s25">
+				<h2>Sales Price Increase</h2>
+			</div>
+			<div class = "span s20">
+				<!-- <input type = "number" class = "blue"> <h2>%</h2> -->
+				<input type="range" class = "slider" min="0" max="2" value="0" id="salesPriceRange" step = "0.1">
+				<h2 id = "salesPriceRangeValue">0.0</h2><h2>&nbsp;%</h2>
+			</div>
+			
+			<div class = "horizontalLine"> </div>
+		</div>
+		
+		<div class = "detail2 wideSpan">
+			<div class = "span s25">
+				<h1>CONVENTIONAL </br> CONVEYING</h1>
+			</div>
+			<div class = "span s20">
+				<h3>Dust Creation</h3> </br>
+				<h1 id = "dustCreationA">200</h1><h1>&nbsp;ppm</h1>
+			</div>
+			<div class = "span s25">
+				<h3>Dust Content (Final Product)</h3> </br>
+				<h1 id = "dustContentA">40</h1><h1>&nbsp;ppm</h1>
+			</div>
+			<div class = "span s20">
+				<h3>Sales Price</h3> </br>
+				<h1 id = "salesPriceA">1&thinsp;000</h1><h1>&nbsp;$/t</h1>
+			</div>
+		</div>
+		
+		<div class = "detail3 wideSpan">
+			<div class = "span s25">
+				<h1>FLUIDLIFT</h1> </br>
+				<h2>ecoblue</h2>
+			</div>
+			<div class = "span s20">
+				<h3>Dust Creation</h3> </br>
+				<h1 id = "dustCreationB">20</h1><h1>&nbsp;ppm</h1>
+			</div>
+			<div class = "span s25">
+				<h3>Dust Content (Final Product)</h3> </br>
+				<h1 id = "dustContentB">10</h1><h1>&nbsp;ppm</h1>
+			</div>
+			<div class = "span s20">
+				<h3>Sales Price</h3> 
+				<h3 id = "salesPricePlus" class = "plus grey"> +10 $/t</h3></h3>
+				<h3 id = "salesPricePlusTotal" class = "plus"> (+20 000 $/y)</h3></h3>
+				</br>
+				<h1 id = "salesPriceB">1&thinsp;010</h1><h1>&nbsp;$/t</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div id = "productivityDiv" class = "detail">
+		<div class = "detail1 wideSpan oneLine">
+			<div class = "span s25">
+				<h2>Debottlenecking</h2>
+			</div>
+			<div class = "span s20">
+				<!-- <input type = "number" class = "blue"> <h2>%</h2> -->
+				<input type="range" class = "slider" min="0" max="20" value="0" id="debottleneckingRange" step = "1">
+				<h2 id = "debottleneckingRangeValue">0</h2><h2>&nbsp;%</h2>
+			</div>
+			
+			<div class = "horizontalLine"> </div>
+		</div>
+		
+		<div class = "detail2 wideSpan">
+			<div class = "span s25">
+				<h1>CONVENTIONAL </br> CONVEYING</h1>
+			</div>
+			<div class = "span s25">
+				<h3>Sales Quantity</h3> </br>
+				<h1 id = "salesQuantityA">200 000</h1><h1>&nbsp;t/y</h1>
+			</div>
+			<!-- <div class = "span s25">
+				<h3>Sales</h3> </br>
+				<h1 id = "salesA">200 000 000</h1><h1>&nbsp;$/y</h1>
+			</div> -->
+		</div>
+		
+		<div class = "detail3 wideSpan">
+			<div class = "span s25">
+				<h1>FLUIDLIFT</h1> </br>
+				<h2>ecoblue</h2>
+			</div>
+			<div class = "span s25">
+				<h3>Sales Quantity</h3> <h3 id = "salesPlus" class = "plus grey"> +20 000 t/y</h3> <h3 id = "salesPlusTotal" class = "plus"> (+2 000 000 $/y)</h3> </br>
+				<h1 id = "salesQuantityB">220 000</h1><h1>&nbsp;t/y</h1>
+			</div>
+			<!-- <div class = "span s25">
+				<h3>Sales</h3>
+				<h3 id = "salesPlusTotal" class = "plus grey"> (+2 000 000 $/y)</h3></h3></br>
+				<h1 id = "salesB">220 000 000</h1><h1>&nbsp;$/y</h1>
+			</div> -->
+		</div>
+	</div>
+	
+	<div id = "wasteDiv" class = "detail">
+		<div class = "detail1 wideSpan oneLine">
+			<div class = "span s25">
+				<h2>Disposal Costs</h2>
+			</div>
+			<div class = "span s20">
+				<input type = "number" class = "blue" id = "disposalCostInput"> <h2>$/t</h2>
+			</div>
+			
+			<div class = "horizontalLine"> </div>
+		</div>
+		
+		<div class = "detail2 wideSpan">
+			<div class = "span s25">
+				<h1>CONVENTIONAL </br> CONVEYING</h1>
+			</div>
+			<div class = "span s25">
+				<h3>Fines and Streamers</h3> </br>
+				<h1 id = "finesAndStreamersA">32</h1><h1>&nbsp;t/y</h1>
+			</div>
+			<div class = "span s25">
+				<h3>Disposal</h3> </br>
+				<h1 id = "disposalA">32</h1><h1>&nbsp;$/y</h1>
+			</div>
+		</div>
+		
+		<div class = "detail3 wideSpan">
+			<div class = "span s25">
+				<h1>FLUIDLIFT</h1> </br>
+				<h2>ecoblue</h2>
+			</div>
+			<div class = "span s25">
+				<h3>Fines and Streamers</h3>
+				<h3 id = "finesAndStreamersPlus" class = "plus grey"> -29.8 t/y</h3></h3></br>
+				<h1 id = "finesAndStreamersB">2.2</h1><h1>&nbsp;t/y</h1>
+			</div>
+			<div class = "span s25">
+				<h3>Disposal + Production Increase</h3>
+				<h3 id = "disposalPlusTotal" class = "plus"> (+36 500 $/y)</h3></h3></br>
+				<h1 id = "disposalB">2.2</h1><h1>&nbsp;$/y</h1>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div id = "energyDiv" class = "detail">
+		<div class = "detail1 wideSpan threeLine">
+			<div class = "span s30">
+				<h2>Electricity Price</h2> </br>
+				<!-- <h2>Decrease Energy Consumption</h2> </br> -->
+				<h2>Operating Hours</h2> </br>
+				<h2>Installed Power</h2>
+			</div>
+			<div class = "span s20">
+				<input type = "number" class = "blue" id = "electricityCost"> <h2>ct/kWh</h2> </br>
+				<!-- <h2 id = "decreaseEnergyPrice">20%</h2> </br> -->
+				<h2 id = "operatingHours">8000 h/y</h2> </br>
+				<h2 id = "installedCapacity">250kW</h2>
+			</div>
+			
+			<div class = "horizontalLine"> </div>
+		</div>
+		
+		<div class = "detail2 wideSpan">
+			<div class = "span s25">
+				<h1>CONVENTIONAL </br> CONVEYING</h1>
+			</div>
+			<div class = "span s15">
+				<h3>Sales Quantity</h3> </br>
+				<h1 id = "salesQuantityEnergyA">200 000</h1><h1>&nbsp;t/y</h1>
+			</div>
+			<div class = "span s20">
+				<h3>Specific E-Consumption</h3> </br>
+				<h1 id = "specificCapacityA">10</h1><h1>&nbsp;kWh/t</h1>
+			</div>
+			<div class = "span s15">
+				<h3>Specific E-Costs</h3> </br>
+				<h1 id = "electricityPriceA">1.5</h1><h1>&nbsp;$/t</h1>
+			</div>
+			<div class = "span s15">
+				<h3>Operating Costs</h3> </br>
+				<h1 id = "operatingCostsA">300 000</h1><h1>&nbsp;$/y</h1>
+			</div>
+		</div>
+		
+		<div class = "detail3 wideSpan">
+			<div class = "span s25">
+				<h1>FLUIDLIFT</h1> </br>
+				<h2>ecoblue</h2>
+			</div>
+			<div class = "span s15">
+				<h3>Sales Quantity</h3> </br>
+				<h1 id = "salesQuantityEnergyB">220 000</h1><h1>&nbsp;t/y</h1>
+			</div>
+			<div class = "span s20">
+				<h3>Specific E-Consumption</h3> </br>
+				<h1 id = "specificCapacityB">8.2</h1><h1>&nbsp;kWh/t</h1>
+			</div>
+			<div class = "span s15">
+				<h3>Specific E-Costs</h3>
+				<h3 id = "operatingCostsPlus" class = "plus grey"> -0.27 $/t</h3>
+				</br>
+				<h1 id = "electricityPriceB">1.23</h1><h1>&nbsp;$/t</h1>
+			</div>
+			<div class = "span s15">
+				<h3>Operating Costs</h3> 
+				<h3 id = "operatingCostsPlusTotal" class = "plus"> (+30 000 $/y)</h3>
+				</br>
+				<h1 id = "operatingCostsB">270 000</h1><h1>&nbsp;$/y</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div id = "operationDiv" class = "detail">
+		<div class = "detail1 wideSpan oneLine">
+			<div class = "span s25">
+				<h2>Profit Increase</h2>
+			</div>
+			<div class = "span s20">
+				<input id = "profitIncrease" type = "number" class = "blue"> <h2>$/y</h2>
+			</div>
+		</div>
+		
+		<div class = "detail3 wideSpan">
+			<div class = "span s25">
+				<h1>FLUIDLIFT</h1> </br>
+				<h2>ecoblue</h2>
+			</div>
+			<div class = "span s25">
+				<h3>Maintenance and Cleaning</h3> </br>
+				<h1>Less downtime days</h1>
+			</div>
+			<div class = "span s20">
+				<h3>Maintenance</h3> </br>
+				<h1>Less staff cost</h1>
+			</div>
+			<div class = "span s20">
+				<h3>Claims</h3> </br>
+				<h1>Less rejected batches</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id = "darken"></div>
+	<div id = "menu">
+		<div id = "option1">
+			<h1>CALCULATOR</h1>
+		</div>
+		<div id = "option3">
+			<h1>SIMULATION</h1>
+		</div>
+		<div id = "option2">
+			<h1>EXIT</h1>
+		</div>
+		<div id = "dots">
+			<h1> ··· </h1>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
+<script src="src/jquery_1.12.4.min.js"></script>
+<script type="text/javascript" src="src/script-plant.js"></script>
+<script type="text/javascript" src="src/script-menu.js"></script>
+<script type="text/javascript" src="src/script-calc.js"></script>
+<script src="src/jquery.easing.1.3.js"></script>
+
+
+
+
